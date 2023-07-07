@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class = "container center">
+        <div class = "bill-divider-wrapper">
+            <div class = "title">
+                <h1>Bill Divider 🧮</h1>
+            </div>
+            <div class="bill-inputs">
+                <form id="bill-divider-form">
+                    <div class="form-group">
+                        <label for="subtotal">Sub-Total bill (₹)</label>
+                        <input type = "number" id="subtotal" class ="form-control" min = "0" step = "any" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tip">tip (₹)</label>
+                        <input type="number" id="tip" class="form-control" min="0" step="any" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="no-of-person">Number of Person</label>
+                        <input type="number" id="no-of-person" class="form-control" min="0" step="1" required>
+                    </div>
+                    <input type = "submit" id="calc-btn" value="calculate">
+                </form>
+            </div>
+            <div class = "bill-output">
+                <div class = "text-group">
+                    <h3>Total Bill</h3>
+                    <span id = "total-bill">₹ 00.00</span>
+                </div>
+                <div class="text-group">
+                    <h3>Bill Per Person</h3>
+                    <span id="bill-per-person">₹ 00.00</span>
+                </div>
+                <div class="text-group">
+                    <h3>Total Tip</h3>
+                    <span id="total-tip">₹ 00.00</span>
+                </div>
+                <div class="text-group">
+                    <h3>Tip Per Person</h3>
+                    <span id="tip-per-person">₹ 00.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
